@@ -1,8 +1,40 @@
 <!DOCTYPE html>
-<html>
-  <title>  MrGenty  </title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to GitHub</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://picsum.photos/1920/1080');
+            background-size: cover;
+            background-position: center;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+    <script>
+        setTimeout(function(){
+            window.location.href = "https://github.com/mrgenty";
+        }, 5000);
+    </script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>Hosted by GitHub Pages</p>
+    <div class="content">
+        <h1>Redirecting to My GitHub Profile</h1>
+        <p>You are being redirected to my GitHub profile.</p>
+        <p>If you are not redirected automatically, <a href="https://github.com/mrgenty" style="color: #00BFFF;">click here</a>.</p>
+    </div>
 </body>
 </html>
