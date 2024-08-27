@@ -8,26 +8,27 @@
         body, html {
             height: 100%;
             margin: 0;
-            font-family: Arial, sans-serif;
-            color: white;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-image: url('https://picsum.photos/1920/1080');
             background-size: cover;
             background-position: center;
-        }
-        .content {
-            background: rgba(0, 0, 0, 0.5);
-            padding: 20px;
-            border-radius: 10px;
+            font-family: Arial, sans-serif;
         }
     </style>
     <script>
-        setTimeout(function(){
-            window.location.href = "https://github.com/mrgenty";
-        }, 5000);
+        function setDynamicBackground() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const imageUrl = `https://picsum.photos/${width}/${height}`;
+            
+            document.body.style.backgroundImage = `url('${imageUrl}')`;
+
+            setTimeout(function(){
+                window.location.href = "https://github.com/mrgenty";
+            }, 5000);
+        }
+
+        window.onload = setDynamicBackground;
     </script>
 </head>
+<body>
+</body>
 </html>
